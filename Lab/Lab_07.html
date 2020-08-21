@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_07</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+    <style>
+        table,
+        td,
+        th.italic {
+            font-style: italic;
+            border-collapse: separate;
+            border-spacing: 5
+        }
+
+        table,
+        td,
+        th {
+            text-shadow: 1px 1px 4px red;
+        }
+
+        table,
+        td,
+        th {
+            text-align: center;
+            ;
+        }
+
+        table {
+            width: 40vw;
+            height: 50vh;
+            background-color: rgb(247, 247, 247);
+            border-radius: 30px;
+            border: solid 10px rgb(143, 143, 241);
+        }
+
+        table tr:first-child th:first-child {
+            border-radius: 20px 0 0 0;
+        }
+
+        table tr:first-child th:last-child {
+            border-radius: 0 20px 0 0;
+        }
+
+        table tr:last-child td:first-child {
+            border-radius: 0 0 0 20px;
+        }
+
+        table tr:last-child td:last-child {
+            border-radius: 0 0 20px 0;
+        }
+
+        td:hover {
+            background-color: rgb(247, 83, 71);
+        }
+
+
+        .parent {
+
+            display: grid;
+
+            grid-template: auto 1fr auto / auto 1fr auto;
+            margin: 0
+        }
+
+        header {
+            padding: 2rem;
+            grid-column: 1 / 4;
+            background-color: rgb(255, 112, 112);
+            font-size: 30pt;
+        }
+
+        .left-side {
+            grid-column: 1 / 2;
+        }
+
+        main {
+            grid-column: 2 / 3;
+        }
+
+        .right-side {
+            grid-column: 3 / 4; display: flex ;align-items:center ;
+        }
+
+        footer {
+            grid-column: 1 / 4;
+            background-color: rgb(195, 130, 255);
+            height: 80px;
+            font-size: 30pt;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <div class="parent">
+        <header class="pink section" align="center">東海大學課程報名</header>
+        <button type="button" class="btn btn-primary" align="center">課程索引</button>
+        <button type="button" class="btn btn-secondary" align="center">課表範例</button>
+        <button type="button" class="btn btn-success" align="center">補充項目</button>
+
+        <div class="left-side blue section" contenteditable>
+            <img src="../image/cat.image.jpg" class="img-fluid" alt="Responsive image" >
+        
+        
+        </div>
+        <main class="section coral" contenteditable>
+            <table align="center" border="2">
+                <tr>
+                    <th> </th>
+                    <th>星期一</th>
+                    <th>星期二</th>
+                    <th>星期三</th>
+                    <th>星期四</th>
+                    <th>星期五</th>
+                </tr>
+                <tr>
+                    <td><b>09:10</b></td>
+                    <td>python基礎程式設計</td>
+                    <td>Web基礎程式設計</td>
+                    <td>軟體工程專題</td>
+                    <td>python基礎程式設計</td>
+                    <td>Web基礎程式設計</td>
+                </tr>
+                <tr>
+                    <td><b>10:10</b></td>
+                    <td>python基礎程式設計</td>
+                    <td>Web基礎程式設計</td>
+                    <td>軟體工程專題</td>
+                    <td>python基礎程式設計</td>
+                    <td>Web基礎程式設計</td>
+                </tr>
+                <tr>
+                    <td><b>11:10</b></td>
+                    <td>python基礎程式設計</td>
+                    <td>Web基礎程式設計</td>
+                    <td>軟體工程專題</td>
+                    <td>python基礎程式設計</td>
+                    <td>Web基礎程式設計</td>
+                </tr>
+                <tr>
+                    <td style="font-size:20px">12:10</td>
+                    <td colspan="5" align="center">午休</td>
+
+                </tr>
+                <tr>
+                    <td><b>13:10</b></td>
+                    <td>python基礎程式設計</td>
+                    <td>Web基礎程式設計</td>
+                    <td>資訊概論</td>
+                    <td>python基礎程式設計</td>
+                    <td>Web基礎程式設計</td>
+                </tr>
+                <tr>
+                    <td><b>14:10</b></td>
+                    <td>python基礎程式設計</td>
+                    <td>Web基礎程式設計</td>
+                    <td>資訊概論</td>
+                    <td>python基礎程式設計</td>
+                    <td>Web基礎程式設計</td>
+                </tr>
+                <tr>
+                    <td><b>15:10</b></td>
+                    <td>python基礎程式設計</td>
+                    <td>Web基礎程式設計</td>
+                    <td>資訊概論</td>
+                    <td>python基礎程式設計</td>
+                    <td>Web基礎程式設計</td>
+                </tr>
+                <tr>
+                    <td style="font-size:20px">16:10</td>
+                    <td colspan="5" align="center">快樂回家去</td>
+                </tr>
+            </table>
+        </main>
+
+
+        <div class="right-side yellow section" contenteditable>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">信箱</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">密碼</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <footer class="green section" align="center">註解</footer>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
